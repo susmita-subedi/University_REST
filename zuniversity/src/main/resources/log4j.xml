@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+	<appender name="Console" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d [%t] %-5p %c - %m%n" />
+		</layout>
+	</appender>
+
+
+    <!--  server side categories -->
+	<category name="org.springframework.transaction">
+		<priority value="DEBUG" />
+	</category>
+	
+	 
+	<category name="org.springframework.beans">
+		<priority value="ERROR" />
+	</category>
+	
+	<category name="edu.npu.zu.resthandlers">
+		<priority value="DEBUG" />
+	</category>
+	
+	<category name="edu.npu.zu">
+		<priority value="DEBUG" />
+	</category>
+ 
+	<category name="org.springframework.jdbc">
+		<priority value="DEBUG" />
+	</category>
+
+	<category name="org.springframework.orm">
+		<priority value="DEBUG" />
+	</category>
+	
+	<category name="org.hibernate">
+		<priority value="INFO" />
+	</category>
+	
+	<category name="org.hibernate.type">
+	    <!--  TRACE to see binding -->
+		<priority value="DEBUG" />
+	</category>
+	<root>
+		<priority value="INFO" />
+		<appender-ref ref="Console" />
+	</root>
+</log4j:configuration>

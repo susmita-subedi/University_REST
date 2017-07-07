@@ -1,0 +1,21 @@
+Use the following URL to retrieve student with id 100  (use GET)
+    http://localhost:8080/zuniversity/webservices/studrestapp/student/100
+
+
+Use the following URL to post a student  (use POST -- data must be in request body)
+    http://localhost:8080/zuniversity/webservices/studrestapp/student
+    
+Use the following URL to retrieve a list of all students (use GET)
+    http://localhost:8080/zuniversity/webservices/studrestapp/student
+    
+Use the following URL to delete student with id 100  (use DELETE)
+    http://localhost:8080/zuniversity/webservices/studrestapp/student/100
+    
+Use the following URL to modify data for student with id 100  (use PUT -- data must be in request body)
+    http://localhost:8080/zuniversity/webservices/studrestapp/student/100
+
+Use the following URL to retrieve student with id 100 BUT this URL requires username/password (use GET)
+    http://localhost:8080/zuniversity/webservices/studrestapp/authstudent/100
+    
+Example of HATEOAS retrieving info on one student and includes links (Use GET)     
+    http://localhost:8080/zuniversity/webservices/studrestapp/studentlinks/100

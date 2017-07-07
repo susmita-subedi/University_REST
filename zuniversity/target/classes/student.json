@@ -1,0 +1,4 @@
+Note:  Use the following URL to post a student
+    http://localhost:8080/zuniversity/webservices/studrestapp/student
+
+{"name":{"lastName":"Ginelli","firstName":"Joe"},"age":23}
